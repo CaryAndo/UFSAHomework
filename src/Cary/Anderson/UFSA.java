@@ -18,7 +18,7 @@ public class UFSA {
     HashMap<TwoTuple, Character> transitionTable = new HashMap<TwoTuple, Character>();
     List<Character> alphabet = new ArrayList<Character>();
     List<Character> finalStates = new ArrayList<Character>();
-    Character state = null;
+    ArrayList<String> sequences = new ArrayList<String>();
 
     public UFSA() {
 
@@ -32,6 +32,39 @@ public class UFSA {
 
     public void setFile(File f) {
         file = f;
+    }
+
+    /*
+    * Scan the lines and change state accordingly.
+    * */
+    public void printResults() {
+        System.out.println("Strings: ");
+        for (String line : sequences) {
+            Character state = null;
+            System.out.print(line);
+            for (char c : line.toCharArray()) {
+                if (state == null) {
+                    state = c;
+                    continue;
+                }
+                TwoTuple tempTuple = new TwoTuple(state, c);
+                if (!alphabet.contains(c))
+                    break;
+                if (transitionTable.containsKey(tempTuple)) {
+                    state = transitionTable.get(tempTuple);
+                    //System.out.print("State: " + c);
+                } else {
+                    state = null;
+                    System.out.print(" Trap state!");
+                    break;
+                }
+            }
+            if (finalStates.contains(state)) {
+                System.out.print(" Accept");
+            } else {
+                System.out.print(" Reject");
+            }
+        }
     }
 
     /*
@@ -116,27 +149,15 @@ public class UFSA {
                     }
                 } else {
                     /*
-                    * Else if it's just numbers in a line, then lets start changing state.
+                    * Else if it's just numbers in a line, build a sequence to be evaluated later.
                     * */
+                    String sequence = "";
                     for (char c : line.toCharArray()) {
                         if (c == ' ')
                             continue;
-                        if (state == null) {
-                            state = c;
-                            continue;
-                        }
-                        TwoTuple tempTuple = new TwoTuple(state, c);
-                        if (transitionTable.containsKey(tempTuple)) {
-                            state = transitionTable.get(tempTuple);
-                        } else {
-                            state = null;
-                        }
+                        sequence += c;
                     }
-                    if (state == null || !finalStates.contains(state)) {
-                        System.out.println("Failure!");
-                    } else {
-                        System.out.println("Success you ended in a final state! :)");
-                    }
+                    sequences.add(sequence);
                  }
                 count++;
             }
