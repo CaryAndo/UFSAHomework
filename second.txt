@@ -300,4 +300,13 @@ abcdefghijklmnopqrstuvwxyz0123456789-_.@
 (7, x, 9)
 (7, y, 9)
 (7, z, 9)
-
+a.b.c@d.w3c
+jsmith
+jsmith@olympus
+jsmith@olympus.gov
+_jsmith-example.olympus@states.us
+jsmith.edu,
+john@mail.office
+ComputerScienceDepartment@csupomona.edu
+jsmith@LA.cnn.com
+SMITH@bookStore.Peru

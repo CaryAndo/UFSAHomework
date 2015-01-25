@@ -58,10 +58,11 @@ public class UFSA {
             Character state = '0';
             System.out.print(line);
             for (char c : line.toCharArray()) {
-                //System.out.println(" beginning state: " + state);
+                if (Character.isLetter(c))
+                    c = Character.toLowerCase(c);
                 TwoTuple tempTuple = new TwoTuple(state, c);
                 if (!alphabet.contains(c)) {
-                    System.out.println("alphabet is messed up!");
+                    System.out.print(" Character not in alphabet! " + c);
                     break;
                 }
                 //System.out.println(" Consuming: " + tempTuple.toString());
@@ -72,14 +73,14 @@ public class UFSA {
                     state = '-';
                     //System.out.println(" Consuming: " + tempTuple.toString());
 
-                    System.out.print(" Trap state! " + state);
+                    System.out.print(" Trap state!");
                     break;
                 }
             }
             if (finalStates.contains(state)) {
-                System.out.println(" Accept");
+                System.out.println(" - Accept");
             } else {
-                System.out.println(" Reject");
+                System.out.println(" - Reject");
             }
         }
     }
@@ -155,6 +156,8 @@ public class UFSA {
                     for (char c : line.toCharArray()) {
                         if (c == ',' || c == ' ' || c == '(' || c == ')')
                             continue;
+                        if (Character.isLetter(c))
+                            c = Character.toLowerCase(c);
                         if (temp[0] == ' ') {
                             temp[0] = c;
                         } else if (temp[1] == ' ') {
