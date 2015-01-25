@@ -63,17 +63,16 @@ public class UFSA {
                 TwoTuple tempTuple = new TwoTuple(state, c);
                 if (!alphabet.contains(c)) {
                     System.out.print(" Character not in alphabet! " + c);
+                    state = null;
                     break;
                 }
-                //System.out.println(" Consuming: " + tempTuple.toString());
-                //System.out.println(" contains?: " + transitionTable.get(tempTuple));
                 if (transitionTable.containsKey(tempTuple)) {
                     state = transitionTable.get(tempTuple);
                 } else {
                     state = '-';
                     //System.out.println(" Consuming: " + tempTuple.toString());
 
-                    System.out.print(" Trap state!");
+                    System.out.print(" Trap state! + " + tempTuple.toString());
                     break;
                 }
             }
