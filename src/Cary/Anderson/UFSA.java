@@ -69,10 +69,10 @@ public class UFSA {
                 if (transitionTable.containsKey(tempTuple)) {
                     state = transitionTable.get(tempTuple);
                 } else {
-                    state = '-';
+                    state = null;
                     //System.out.println(" Consuming: " + tempTuple.toString());
 
-                    System.out.print(" Trap state! + " + tempTuple.toString());
+                    //System.out.print(" Trap state! + " + tempTuple.toString());
                     break;
                 }
             }
