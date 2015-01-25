@@ -71,6 +71,7 @@ public class UFSA {
                 } else {
                     state = '-';
                     //System.out.println(" Consuming: " + tempTuple.toString());
+
                     System.out.print(" Trap state! " + state);
                     break;
                 }
