@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63ca4782-b9db-466b-89b8-cd17008a74f0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/cs311Project1/Cary/Anderson/test.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Cary/Anderson/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs311Project1/Cary/Anderson/Main.class" afterPath="$PROJECT_DIR$/out/production/cs311Project1/Cary/Anderson/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs311Project1/Cary/Anderson/UFSA.class" afterPath="$PROJECT_DIR$/out/production/cs311Project1/Cary/Anderson/UFSA.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cary/Anderson/Main.java" afterPath="$PROJECT_DIR$/src/Cary/Anderson/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cary/Anderson/TwoTuple.java" afterPath="$PROJECT_DIR$/src/Cary/Anderson/TwoTuple.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cary/Anderson/UFSA.java" afterPath="$PROJECT_DIR$/src/Cary/Anderson/UFSA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
     </list>
     <ignored path="cs311Project1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +39,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -53,16 +49,16 @@
       <file leaf-file-name="UFSA.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/UFSA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5590062" vertical-offset="435" max-vertical-offset="2685">
-              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.7446808" vertical-offset="765" max-vertical-offset="2925">
+              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#327#348#0" expanded="true" />
-                <element signature="e#396#407#0" expanded="true" />
-                <element signature="e#458#469#0" expanded="true" />
-                <element signature="e#520#528#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#349#370#0" expanded="true" />
+                <element signature="e#418#429#0" expanded="true" />
+                <element signature="e#480#491#0" expanded="true" />
+                <element signature="e#542#550#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +67,8 @@
       <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -81,8 +77,8 @@
       <file leaf-file-name="TwoTuple.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/TwoTuple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="945">
-              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="990">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#284#285#0" expanded="true" />
                 <element signature="e#312#313#0" expanded="true" />
@@ -92,6 +88,8 @@
                 <element signature="e#444#445#0" expanded="true" />
                 <element signature="e#484#485#0" expanded="true" />
                 <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,9 +103,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cary/Anderson/TwoTuple.java" />
         <option value="$PROJECT_DIR$/src/Cary/Anderson/test.txt" />
         <option value="$PROJECT_DIR$/src/Cary/Anderson/Main.java" />
+        <option value="$PROJECT_DIR$/src/Cary/Anderson/TwoTuple.java" />
+        <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/src/Cary/Anderson/UFSA.java" />
       </list>
     </option>
@@ -449,12 +448,12 @@
       <created>1422060226293</created>
       <option name="number" value="Default" />
       <updated>1422060226293</updated>
-      <workItem from="1422060230996" duration="10880000" />
+      <workItem from="1422060230996" duration="17668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10880000" />
+    <option name="totallyTimeSpent" value="17668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="28" width="1269" height="764" extended-state="0" />
@@ -473,7 +472,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925835" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -481,7 +480,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25509372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -524,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/TwoTuple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="945">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="990">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#284#285#0" expanded="true" />
             <element signature="e#312#313#0" expanded="true" />
@@ -535,38 +534,40 @@
             <element signature="e#444#445#0" expanded="true" />
             <element signature="e#484#485#0" expanded="true" />
             <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cary/Anderson/UFSA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5590062" vertical-offset="435" max-vertical-offset="2685">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.7446808" vertical-offset="765" max-vertical-offset="2925">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#327#348#0" expanded="true" />
-            <element signature="e#396#407#0" expanded="true" />
-            <element signature="e#458#469#0" expanded="true" />
-            <element signature="e#520#528#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#349#370#0" expanded="true" />
+            <element signature="e#418#429#0" expanded="true" />
+            <element signature="e#480#491#0" expanded="true" />
+            <element signature="e#542#550#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,6 +5,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -38,31 +39,46 @@ public class UFSA {
     * Scan the lines and change state accordingly.
     * */
     public void printResults() {
-        System.out.println("Strings: ");
+        System.out.print("(1) number of states: " + numberOfStates);
+        System.out.print("\n(2) final states: ");
+        for (Character c : finalStates)
+            System.out.print("" + c + " ");
+        System.out.print("\n(3) alphabet: ");
+        for (Character c : alphabet)
+            System.out.print("" + c + " ");
+        System.out.println("\n(4) transitions: ");
+        for (Map.Entry<TwoTuple, Character> entry : transitionTable.entrySet()) {
+            String key = entry.getKey().toString();
+            Character value = entry.getValue();
+            System.out.println("key, " + key + " value " + value );
+        }
+
+        System.out.println("\nStrings: ");
         for (String line : sequences) {
-            Character state = null;
+            Character state = '0';
             System.out.print(line);
             for (char c : line.toCharArray()) {
-                if (state == null) {
-                    state = c;
-                    continue;
-                }
+                //System.out.println(" beginning state: " + state);
                 TwoTuple tempTuple = new TwoTuple(state, c);
-                if (!alphabet.contains(c))
+                if (!alphabet.contains(c)) {
+                    System.out.println("alphabet is messed up!");
                     break;
+                }
+                //System.out.println(" Consuming: " + tempTuple.toString());
+                //System.out.println(" contains?: " + transitionTable.get(tempTuple));
                 if (transitionTable.containsKey(tempTuple)) {
                     state = transitionTable.get(tempTuple);
-                    //System.out.print("State: " + c);
                 } else {
-                    state = null;
-                    System.out.print(" Trap state!");
+                    state = '-';
+                    //System.out.println(" Consuming: " + tempTuple.toString());
+                    System.out.print(" Trap state! " + state);
                     break;
                 }
             }
             if (finalStates.contains(state)) {
-                System.out.print(" Accept");
+                System.out.println(" Accept");
             } else {
-                System.out.print(" Reject");
+                System.out.println(" Reject");
             }
         }
     }
@@ -136,7 +152,7 @@ public class UFSA {
                 if (line.charAt(0) == '(') {
                     char[] temp = {' ', ' ', ' '};
                     for (char c : line.toCharArray()) {
-                        if (c == ',' || c == ' ')
+                        if (c == ',' || c == ' ' || c == '(' || c == ')')
                             continue;
                         if (temp[0] == ' ') {
                             temp[0] = c;
@@ -145,8 +161,8 @@ public class UFSA {
                         } else if (temp[2] == ' ') {
                             temp[2] = c;
                         }
-                        transitionTable.put(new TwoTuple(temp[0], temp[1]), temp[2]);
                     }
+                    transitionTable.put(new TwoTuple(temp[0], temp[1]), temp[2]);
                 } else {
                     /*
                     * Else if it's just numbers in a line, build a sequence to be evaluated later.

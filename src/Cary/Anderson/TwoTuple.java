@@ -47,11 +47,14 @@ public class TwoTuple {
         return true;
     }
 
-    /*
+    public String toString() {
+        return " state: " + state + " input: " + input;
+    }
+
     @Override
     public int hashCode() {
         int result = (int) state;
         result = 31 * result + (int) input;
         return result;
-    }*/
+    }
 }
