@@ -48,7 +48,7 @@ public class TwoTuple {
     }
 
     public String toString() {
-        return " state: " + state + " input: " + input;
+        return "state: " + state + " input: " + input;
     }
 
     @Override

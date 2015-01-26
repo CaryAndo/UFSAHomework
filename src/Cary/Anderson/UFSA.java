@@ -50,7 +50,7 @@ public class UFSA {
         for (Map.Entry<TwoTuple, Character> entry : transitionTable.entrySet()) {
             String key = entry.getKey().toString();
             Character value = entry.getValue();
-            System.out.println("key, " + key + " value " + value );
+            System.out.println("(" + key + ") -> " + value );
         }
 
         System.out.println("\nStrings: ");
