@@ -1,3 +1,10 @@
+/**
+ * CS 311 Project #1
+ * Cary Anderson - Completed on 26 January, 2015
+ * To run, include the five text files in the same directory and run Main.java
+ * e.g. javac Main.java && java Main
+ * */
+
 package Cary.Anderson;
 
 import java.io.*;
@@ -70,9 +77,6 @@ public class UFSA {
                     state = transitionTable.get(tempTuple);
                 } else {
                     state = null;
-                    //System.out.println(" Consuming: " + tempTuple.toString());
-
-                    //System.out.print(" Trap state! + " + tempTuple.toString());
                     break;
                 }
             }
@@ -102,7 +106,6 @@ public class UFSA {
                 line = line.trim().replaceAll(" ", "");
                 if (line.equals(""))
                     continue; // Skip blank lines completely
-
                 /*
                 * Set the number of states using the first line of the input file.
                 * */
@@ -128,7 +131,6 @@ public class UFSA {
                             continue;
                         finalStates.add(c);
                     }
-
                     count++;
                     continue;
                 }
