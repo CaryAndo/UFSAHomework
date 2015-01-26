@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        File test = new File("fourth.txt");
+        File test = new File("fifth.txt");
         UFSA primary = new UFSA(test, true);
         primary.printResults();
     }
